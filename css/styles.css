@@ -1,0 +1,643 @@
+:root {
+    --primary-text-color: #212121;
+    --title-text-color: #757575;
+    --accent-color: #2196F3;
+    --white-text-color:  #FFFFFF;
+    --main-font: "Roboto";
+    --secondary-background-color:#F5F4FA;
+    --hero-color: rgba(47, 48, 58, 0.4);
+    --icon-color:#AFB1B8;
+    --background-icon:#FFFFFF;
+}  
+body {
+    background-color: var(--white-text-color);
+    color: var(--primary-text-color);
+    font-family: "Roboto", sans-serif;
+}
+p,
+h1,
+h2,
+h3 
+h4 {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+button {
+    cursor: pointer;
+}
+address {
+    font-style: normal;
+}
+a {
+    color: currentColor;
+}
+a {
+    text-decoration: none;
+}
+img {
+    display: block;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    
+}
+ul {
+    list-style: none;
+}
+.page-header {
+    background-color: var(--white-text-color);
+    border-bottom: 1px solid #ECECEC;
+}
+/* logo сайта */
+.logo {
+    color: var(--accent-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+.logostudio {
+    color: var(--primary-text-color);    
+}
+.logostudiofooter {
+   color: var(--white-text-color);
+}
+            /* nav list========== */
+.navlist {
+    display: flex;
+    margin-left: 93px;
+    align-items: center;
+   
+}
+.navlist li {
+    margin-right: 50px;
+}
+.navlist-header, .navlist-header, .navlist-header:last-child {
+    margin-right: 0px;
+}
+.navlist.link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.navlist-header,.navlist-header,.navlist-header {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+.navlist-header:hover,.navlist-header:hover,.navlist-header:hover {
+    color: var(--accent-color);
+}
+.navlist a {
+    padding: 32px 0;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing:0.02em;
+}
+.navlist a {
+    display: block;
+}
+.container-nav {
+     display: flex;
+     align-items: center;
+}
+/* header list mailto i tel */
+.headerlist-nav,.headerlist-nav {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.headerlist a:hover,
+.headerlist a:focus,
+.navlist a:hover,
+.navlist a:focus {
+    color: var(--accent-color);
+}
+
+.headerlist a {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.headerlist {
+    display: flex;
+    margin-left: auto;   
+}
+.icon {
+    display: flex;
+    align-self: center;
+    margin-left: 10px;
+    fill: currentColor;
+}
+.icon:hover {
+    color: var(--accent-color);
+}
+.headerlist .item {
+    margin-left: 30px;
+}
+.container-hero {
+    padding: 200px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #2F303A;
+}
+                /* головний заголовок */
+.hero-title {
+    margin-bottom: 30px;
+    color: var(--white-text-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em; 
+    text-transform: uppercase;
+}
+.container-hero {
+    max-width: 1600px;
+    height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image:linear-gradient(    
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4),
+    url(../images/img17.jpg));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--hero-color);
+    background: var(--hero-color);
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+/* button */
+.button {
+    display: block;
+    display: inline-block;
+    min-width: 200px;
+    height: 50px;
+    padding: 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border:0;
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+.button:hover {
+    background: #188CE8;
+}
+/* ==============================фон hero and footer================== */
+.hero, .footer {
+    background-color: #2F303A;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.feature {
+    padding-top: 94px;
+    padding-bottom: 0;
+}
+.benefits {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.item-list {
+   width: 270px; 
+   height: 120px;
+   margin-left: 30px;
+}
+.item-list:first-child {
+    margin-left: 0;
+}
+.benefits-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background: var(--secondary-background-color);
+    border-radius: 4px;
+}
+.benefits-content:hover, .benefits-content:focus {
+    background-color:
+}
+
+/* section звголовків */
+.section-title {
+    margin-bottom: 10px;
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.section-text {
+    margin-bottom: 0;
+    color: var(--title-text-color);
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+.section-list {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+
+    margin-left:-30px;
+}
+.section-list > .item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+}
+
+.work-about.section {
+    padding-top: 0;
+}
+/* ================ ===============заголовок h2 секція=================== */
+.title {
+    margin-bottom: 50px;
+    padding-top: 0px;
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.comand-title-list {
+    margin-bottom: 10px;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.comand-text-items {
+    margin-bottom: 16px;
+    color: var(--title-text-color);
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+    margin-left: -30px;
+}
+.cards .item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+}
+.section-comand .section {
+    background: var(--secondary-background-color);
+}
+.section-comand {
+    background-color: var(--secondary-background-color);
+}
+.list-item {
+    display: block;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.comand-list .list-item {
+    flex-basis: calc((100% - 90px) / 4);
+}
+.list-item:not(:last-child) {
+    margin-right: 30px;
+}
+.personal {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.comand-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.team-masters {
+    display: flex;
+    justify-content: center;
+}
+.item-comand {
+    width: 44px;
+    height: 44px;
+    margin-left: 10px;
+}
+.item-comand:first-child {
+    margin-left: 0;
+}
+.icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background: var(--background-icon);
+    color: var(--icon-color);
+}
+.icon-box:hover, .icon-box:focus {
+    background: var(--accent-color);
+    color:var(--icon-color);
+}
+.masters-icon {
+    fill: currentColor;
+        
+}
+/*========= секція постоянні клієнти====== */
+
+.clients-list {
+    display: flex;
+    justify-content: center;
+}
+.clients-item {
+    width: 170px;
+    height: 92px;
+    margin-left: 30px;
+}
+.clients-item:first-child {
+    margin-left: 0;
+}
+.clients-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 106px;
+    height: 60px;
+    background: #E5E5E5;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+}
+.clients-box:hover, .clients-box:focus {
+    border-color:var(--accent-color);
+    color: var(--icon-color);
+}
+.icon-clients {
+    fill: currentColor;
+}
+
+/* footer list */
+.footerlist-address {
+    display: block;
+    color: var(--white-text-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-bottom: 9px;
+}
+.footerlist-mailto,
+.footerlist-tel {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.footerlist-mailto:hover,
+.footerlist-tel:hover {
+    color: var(--title-text-color);
+}
+.footerlist-mailto:focus,
+.footerlist-tel:focus {
+    color: var(--accent-color);
+}
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.logostudiofooter, .footer .logo {
+    margin-bottom: 20px;
+}
+.logostudiofooter .logo {
+    display: block;
+}
+.footer .logo {
+    display: inline-block;
+}
+.footerlist-tel {
+    margin-bottom: 60px;
+}
+.footerlist {
+    display: block;
+}
+.footerlist .item:not(:last-child) {
+    margin-bottom: 9px;
+}
+.footer-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+
+    padding-top: 72px;
+    padding-left: 156px;
+}
+.container-footer {
+    display: flex;
+    align-items: baseline;
+}
+.footer-list {
+    display: flex;
+    justify-content: center;
+}
+.footer-item {
+    width: 44px;
+    height: 44px;
+    margin-left: 10px
+}
+.footer-item:first-child {
+    margin-left: 0;
+}
+.icon-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+
+}
+
+
+
+/* ===============================Портфолио============================== */
+
+.portfolio-buttonlist {
+    display: block;
+    font-family: 'Roboto'; 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border:0;
+}
+.portfolio-buttonlist {
+    padding: 6px 22px;
+}
+.portfolio-button {
+    padding: 6px 22px;
+}
+.portfolio-button {
+    display: block;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background-color: var(--secondary-background-color);
+    border-radius: 4px;
+    border:0;
+}
+.portfolio-button:hover, portfolio-button:focus {
+    color:var(--white-text-color) ;
+    background-color: var(--accent-color);
+}
+
+.portfolio-title {
+    margin-bottom: 4px;
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    text-align: left;
+    letter-spacing: 0.06em;
+}
+.portfolio-text {
+    color: var(--title-text-color);
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: left;
+    letter-spacing: 0.03em;
+}
+.portfolio {
+    padding-top: 6px;
+    padding-bottom: 22px;    
+}
+.portfolio-list {
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: 0;
+
+}
+.portfolio-items {
+    margin-bottom: 50px;
+}
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.portfolio-items li:not(:last-child) {    
+    margin-right: 8px;
+}
+/* -------------------------container================= */
+.portfolio-flex {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+    margin-left: -30px;
+    margin-bottom: -30px;
+
+}
+.portfolio-flex > .gallery-list {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.portfolio-flex > .gallery-list:nth-child(3n) {
+    margin-right: 0;
+}
+.portfolio-flex > .gallery-list:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
+
+/* Эффективные решения для вашего бизнеса адрес  и кнока */
+#FFFFFF
+
+/* Внимание к деталям и список с 4 заголовок h2 h3  имя команды * /#212121;
+
+/* Портфолио контакты */
+  #212121;
+
+
+/* info@devstudio.com */
+/* WebStudio */
+/*студия*/
+#2196F3
+/* +38 096 111 11 11 */
+/* Идейные соображения, а также начало повседневной работы по формированию позиции. */
+/* Marketing */
+color: #757575;
+
+/* info@example.com */
+/* +38 099 111 11 11 */
+color: rgba(255, 255, 255, 0.6);
+
+
+/* кнопка accent  */ #2196F3
+
+/* вторичний колір фона  background: #F5F4FA; */
