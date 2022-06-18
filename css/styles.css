@@ -146,16 +146,16 @@ ul {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    gap:10px;
 }
 .headerlist {
     display: flex;
     margin-left: auto;   
 }
 .icon {
-    display: flex;
-    align-self: center;
-    margin-right: 10px;
-    background: var(--background-icon);   
+   background: var(--background-icon);   
 }
 .icon:hover {
     background-color: var(--accent-color);
@@ -191,8 +191,8 @@ ul {
     url(../images/img17.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     background-color: var(--hero-color);
-    background: var(--hero-color);
     margin-right: auto;
     margin-left: auto;
 
