@@ -230,38 +230,24 @@ ul {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
-
-/* .benefits { */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center;    */
-
 .item-list { 
    margin-left: 30px;
-   margin-bottom: 30px;
 }
 .item-list:first-child {
     margin-left: 0;
 }
-.item-list, .benefits-content {
+.benefits-content {
     width: 270px;
     height: 120px;
 }
 .benefits-content {
     margin-bottom: 30px;
-}
-.benefits-content {
     display: flex;
     align-items: center;
     justify-content: center;
     background: var(--secondary-background-color);
     border-radius: 4px;
 }
-/* .benefits-content:hover, .benefits-content:focus { */
-    /* background-color: */
-
-
 /* section звголовків */
 .section-title {
     margin-bottom: 10px;
@@ -283,7 +269,7 @@ ul {
     display: flex;
     flex-wrap: nowrap;
     list-style: none;
-    margin-left:-30px;
+   
 }
 .section-list >list-item {
     flex-basis: calc(100% / 4 - 30px);
@@ -595,13 +581,16 @@ ul {
 .portfolio-items li:not(:last-child) {    
     margin-right: 8px;
 }
-a .link:hover,
-a .link:focus{  
+.gallery-link {
+    display: block;
+}
+.gallery-link:hover,
+.gallery-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16),
-}
-
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}  
+   
 /* -------------------------container================= */
 .portfolio-flex {
     display: flex;
