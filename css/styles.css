@@ -233,9 +233,6 @@ ul {
 .item-list { 
    margin-left: 30px;
 }
-.item-list:first-child {
-    margin-left: 0;
-}
 .item-list {
     flex-basis: calc((100% / 4 - 30px));
 }
