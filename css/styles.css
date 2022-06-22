@@ -236,7 +236,7 @@ ul {
 .item-list:first-child {
     margin-left: 0;
 }
-.item-list > .benefits-content {
+.item-list {
     flex-basis: calc((100% / 4 - 30px));
 }
 .benefits-content {
@@ -383,8 +383,8 @@ ul {
 .clients-item {
     margin-left: 30px;
 }
-.clients-item, .clients-box {
-    flex-basis: calc((100% - 180px) / 6);
+.clients-item {
+    flex-basis: calc((100% - 150px) / 6);
 }    
 .clients-item:first-child {
     margin-left: 0;
